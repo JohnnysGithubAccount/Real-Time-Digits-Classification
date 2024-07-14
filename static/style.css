@@ -1,0 +1,115 @@
+/* base */
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: 'Baloo Tamma 2', cursive;
+    text-decoration:None;
+    color: rgb(91, 72, 160);
+    height: 700px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+html {
+    background-color: #141414;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* buttons */
+button {
+    position: relative;
+    display: block;
+    justify-content: auto;
+    align-items: auto;
+    left: 0px; 
+    display: block;
+    margin: 3px auto;
+    padding: 6px 18px;
+    border: 2px solid black;
+    background: aquamarine;
+    font-family: 'Baloo Tamma 2', cursive;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 35px;
+    transition: transform 300ms ease;
+    z-index: 2;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+button:hover{
+    background: rgb(0, 248, 207);
+}
+
+/* canvas */
+canvas {
+    display: flex;
+    background-color: black;
+    height: 500px;
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.main-title {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 200px; 
+}
+
+.main-content {
+    display: grid block;
+    grid-template-columns: 1fr 1fr;
+    place-items: center top;
+    align-items: center top;
+    font-family: 'Baloo Tamma 2', cursive;
+    text-decoration:None;
+    color: rgb(91, 72, 160);
+    height: 700px;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: 100px; 
+}
+
+.main-content--canvas {
+    display: flex;
+    justify-content: center left;
+}
+
+.main-content--result {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.result-prediction {
+    display: block;
+    justify-content: center top;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+
+.result-button {
+    display: block;
+    place-items: center;
+    align-items: center;
+    align-content: center;
+    height: 0px;
+    width: 100%;
+}
+
+.result-probs {
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
