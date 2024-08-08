@@ -10,11 +10,14 @@ import cv2
 import keras
 import tensorflow as tf
 
+
+random_tensor = tf.random.uniform(shape=[1, 28, 28], minval=0, maxval=1)
+model = keras.models.load_model("./models/model.h5")
+model.predict(random_tensor)
 app = Flask(__name__)
 
 
 predict_value = "Predict: "
-model = keras.models.load_model("models/model.h5")
 
 
 @app.route("/")
